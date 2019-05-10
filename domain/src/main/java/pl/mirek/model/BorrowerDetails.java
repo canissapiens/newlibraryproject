@@ -3,12 +3,13 @@ package pl.mirek.model;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Data
 @Entity
 @Table(name = "borrower_details")
 
-public class BorrowerDetails {
+public class BorrowerDetails implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_borrower_details")

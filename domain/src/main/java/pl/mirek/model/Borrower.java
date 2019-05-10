@@ -1,15 +1,16 @@
 package pl.mirek.model;
 
 import lombok.Data;
-import org.hibernate.annotations.DynamicInsert;
 
 import javax.persistence.*;
+import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 @Data
 @Entity
 @Table(name="borrower")
-public class Borrower {
+public class Borrower implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name= "id_borrower")
@@ -21,14 +22,12 @@ public class Borrower {
     @Column (name = "last_name")
     private String lastName;
 
-    @Column(name="borrower_details_id")
-    private Long borrowerDetailsId;
 
     @ManyToMany(mappedBy="borrowers")
-    private List<Book> books;
+    private List<Book> books = new ArrayList<>();
 
     @OneToOne
-    @JoinColumn(name="id_borrower_detail")
+    @JoinColumn(name="borrower_details_id")
     private BorrowerDetails details;
 
 

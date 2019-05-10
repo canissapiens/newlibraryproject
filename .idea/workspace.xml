@@ -1,0 +1,1537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="web:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1f9d1989-3fb7-461e-ba18-3a9b127c5cfe" name="Default Changelist" comment="EOD 2019-05-10">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/newlibraryproject.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pl/mirek/dto/AuthorDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pl/mirek/dto/BookDetailWithBorrowerDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pl/mirek/dto/BookDetailsWithAuthorDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pl/mirek/dto/BorrowerDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pl/mirek/dto/NewBookWithAuthorsListDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pl/mirek/test/TestLombok.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pl/mirek/test/TestLombokSerwis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pl/mirek/test/TestString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/pl/mirek/validator/Validator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/target/classes/META-INF/domain.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/target/classes/pl/mirek/dto/AuthorDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/target/classes/pl/mirek/dto/BookDetailWithBorrowerDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/target/classes/pl/mirek/dto/BookDetailsWithAuthorDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/target/classes/pl/mirek/dto/NewBookWithAuthorsListDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/target/classes/pl/mirek/model/Author.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/target/classes/pl/mirek/model/Book.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/target/classes/pl/mirek/model/Borrow.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/target/classes/pl/mirek/model/Borrower.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/target/classes/pl/mirek/model/BorrowerDetails.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/target/classes/pl/mirek/test/TestLombok.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/target/classes/pl/mirek/test/TestLombokSerwis.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/target/classes/pl/mirek/test/TestString.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/target/classes/pl/mirek/validator/Validator$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/target/classes/pl/mirek/validator/Validator$SingletonHolder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/target/classes/pl/mirek/validator/Validator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.annotation.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.ejb.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.jms.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.persistence.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.resource.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.servlet.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.servlet.jsp.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.servlet.jsp.jstl.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.transaction.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/pl/mirek/dao/IBookDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/pl/mirek/dao/IBorrowerDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/pl/mirek/dao/impl/BookDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/pl/mirek/dao/impl/BorrowerDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/pl/mirek/tools/CustomSqlExtractor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/src/main/resources/dbcopy.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/target/classes/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/target/classes/dbcopy.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/target/classes/import.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/target/classes/pl/mirek/dao/IAuthorDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/target/classes/pl/mirek/dao/IBookDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/target/classes/pl/mirek/dao/impl/AuthorDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/target/classes/pl/mirek/dao/impl/BookDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/target/classes/pl/mirek/main/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/target/classes/pl/mirek/tools/CustomSqlExtractor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/pl/mirek/services/AuthorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/pl/mirek/services/BookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/pl/mirek/services/BorrowerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/pl/mirek/services/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/target/classes/pl/mirek/services/AuthorService$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/target/classes/pl/mirek/services/AuthorService$SingletonHolder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/target/classes/pl/mirek/services/AuthorService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/target/classes/pl/mirek/services/BookService$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/target/classes/pl/mirek/services/BookService$SingletonHolder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/target/classes/pl/mirek/services/BookService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/target/classes/pl/mirek/services/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/pl/mirek/filters/SetCharacterEncodingFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/pl/mirek/servlets/AddNewBookFormServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/pl/mirek/servlets/AddNewBookServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/pl/mirek/servlets/BorrowBookServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/pl/mirek/servlets/EditBookDetailsServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/pl/mirek/servlets/ShowAllAuthorsServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/pl/mirek/servlets/ShowAllBooksServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/pl/mirek/servlets/ShowAllBorrowersServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/pl/mirek/servlets/ShowAuthorServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/pl/mirek/servlets/ShowBookDetailsServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/pl/mirek/servlets/ShowRentalBooksServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/pl/mirek/servlets/WriteBookServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/includes/head-includes.jspf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/addnewbook.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/addnewbook.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/authorlist.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/booktorent.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/borrowerlist.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/editbookdetails.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/show-edit-book.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/showauthordetails.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/showbookdetails.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/classes/pl/mirek/filters/SetCharacterEncodingFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/classes/pl/mirek/servlets/AddNewBookFormServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/classes/pl/mirek/servlets/AddNewBookServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/classes/pl/mirek/servlets/DoItWithBook.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/classes/pl/mirek/servlets/EditBookDetailsServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/classes/pl/mirek/servlets/ShowAllAuthorsServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/classes/pl/mirek/servlets/ShowAllBooksServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/classes/pl/mirek/servlets/ShowAuthorServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/classes/pl/mirek/servlets/ShowBookDetailsServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/classes/pl/mirek/servlets/WriteBookServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/classes/pl/mirek/tools/ShowInputValues.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/web/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/pl/mirek/filters/SetCharacterEncodingFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/pl/mirek/servlets/AddNewBookFormServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/pl/mirek/servlets/AddNewBookServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/pl/mirek/servlets/DoItWithBook.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/pl/mirek/servlets/EditBookDetailsServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/pl/mirek/servlets/ShowAllAuthorsServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/pl/mirek/servlets/ShowAllBooksServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/pl/mirek/servlets/ShowAuthorServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/pl/mirek/servlets/ShowBookDetailsServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/pl/mirek/servlets/WriteBookServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/pl/mirek/tools/ShowInputValues.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/antlr-2.7.7.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/byte-buddy-1.6.14.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/classmate-1.3.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/dom4j-1.6.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/domain-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/hibernate-commons-annotations-5.0.1.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/hibernate-core-5.2.12.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/hibernate-entitymanager-5.2.12.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/jandex-2.0.3.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/javassist-3.20.0-GA.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/javax.servlet-api-3.1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/jboss-logging-3.3.0.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.0.1.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/jta-1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/lombok-1.18.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/mysql-connector-java-5.1.45.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/persistence-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/service-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/web/addnewbook.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/web/addnewbook.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/web/authorlist.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/web/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/web/css/custom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/web/editbookdetails.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/web/index-min.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/web/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/web/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/web/js/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/web/show-edit-book.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/web/showauthordetails.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/target/web/showbookdetails.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/domain.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/domain/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pl/mirek/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pl/mirek/model/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pl/mirek/model/Borrow.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pl/mirek/model/Borrow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pl/mirek/model/Borrower.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pl/mirek/model/Borrower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/pl/mirek/model/BorrowerDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/pl/mirek/model/BorrowerDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/pl/mirek/dao/IAuthorDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/pl/mirek/dao/IAuthorDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/pl/mirek/dao/impl/AuthorDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/pl/mirek/dao/impl/AuthorDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/pl/mirek/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/pl/mirek/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence/src/main/resources/import.sql" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/resources/import.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/pl/mirek/servlets/DoItWithBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/pl/mirek/servlets/DoItWithBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/index-min.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/index-min.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/index.jsp" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/web/target/" />
+    <ignored path="$PROJECT_DIR$/persistence/target/" />
+    <ignored path="$PROJECT_DIR$/domain/target/" />
+    <ignored path="$PROJECT_DIR$/service/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="autoscrollToSource" value="true" />
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/main/java/pl/mirek/servlets/DoItWithBook.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="344">
+              <caret line="94" column="90" selection-start-line="94" selection-start-column="90" selection-end-line="94" selection-end-column="90" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/main/java/pl/mirek/servlets/BorrowBookServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+              <folding>
+                <element signature="e#516#517#0" expanded="true" />
+                <element signature="e#570#571#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/persistence/src/main/resources/import.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="12" selection-start-column="12" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/show-edit-book.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="397">
+              <caret line="69" column="2" selection-start-line="69" selection-start-column="2" selection-end-line="69" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/main/java/pl/mirek/servlets/ShowRentalBooksServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="363">
+              <caret line="42" column="108" selection-start-line="42" selection-start-column="108" selection-end-line="42" selection-end-column="108" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service/src/main/java/pl/mirek/services/BorrowerService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="407">
+              <caret line="33" column="56" selection-start-line="33" selection-start-column="56" selection-end-line="33" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/booktorent.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1224">
+              <caret line="72" column="123" selection-start-line="72" selection-start-column="123" selection-end-line="72" selection-end-column="123" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="443">
+              <caret line="83" column="19" lean-forward="true" selection-end-line="92" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/borrowerlist.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="426">
+              <caret line="67" selection-start-line="65" selection-end-line="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="Jsp File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/domain/src/main/java/pl/mirek/dto/BookDetailWithBorrowerDto.java" />
+        <option value="$PROJECT_DIR$/domain/src/main/java/pl/mirek/test/TestLombokSerwis.java" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/editbookdetails.jsp" />
+        <option value="$PROJECT_DIR$/domain/src/main/java/pl/mirek/dto/BookDetailsWithAuthorDto.java" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/showbookdetails.jsp" />
+        <option value="$PROJECT_DIR$/web/src/main/java/pl/mirek/servlets/ShowAllBooksServlet.java" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/addnewbook.jsp" />
+        <option value="$PROJECT_DIR$/web/src/main/java/pl/mirek/servlets/AddNewBookServlet.java" />
+        <option value="$PROJECT_DIR$/persistence/src/main/resources/import.sql" />
+        <option value="$PROJECT_DIR$/persistence/pom.xml" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/web/src/main/java/pl/mirek/filters/SetCharacterEncodingFilter.java" />
+        <option value="$PROJECT_DIR$/web/pom.xml" />
+        <option value="$PROJECT_DIR$/domain/src/main/java/pl/mirek/model/Book.java" />
+        <option value="$PROJECT_DIR$/domain/src/main/java/pl/mirek/dto/AuthorDto.java" />
+        <option value="$PROJECT_DIR$/persistence/src/main/java/pl/mirek/dao/IAuthorDao.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/pl/mirek/servlets/ShowAllAuthorsServlet.java" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/authorlist.jsp" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/showauthordetails.jsp" />
+        <option value="$PROJECT_DIR$/domain/src/main/java/pl/mirek/model/Borrow.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/pl/mirek/servlets/ShowAuthorServlet.java" />
+        <option value="$PROJECT_DIR$/persistence/src/main/java/pl/mirek/dao/impl/AuthorDao.java" />
+        <option value="$PROJECT_DIR$/persistence/src/main/java/pl/mirek/tools/CustomSqlExtractor.java" />
+        <option value="$PROJECT_DIR$/persistence/src/main/resources/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/web/src/main/java/pl/mirek/servlets/ShowBookDetailsServlet.java" />
+        <option value="$PROJECT_DIR$/domain/src/main/java/pl/mirek/validator/Validator.java" />
+        <option value="$PROJECT_DIR$/domain/src/main/java/pl/mirek/dto/NewBookWithAuthorsListDto.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/pl/mirek/services/AuthorService.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/pl/mirek/servlets/WriteBookServlet.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/pl/mirek/servlets/AddNewBookFormServlet.java" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/addnewbook.jsp" />
+        <option value="$PROJECT_DIR$/domain/src/main/java/pl/mirek/model/Borrower.java" />
+        <option value="$PROJECT_DIR$/domain/src/main/java/pl/mirek/model/BorrowerDetails.java" />
+        <option value="$PROJECT_DIR$/persistence/src/main/java/pl/mirek/dao/impl/BorrowerDao.java" />
+        <option value="$PROJECT_DIR$/domain/src/main/java/pl/mirek/dto/BorrowerDto.java" />
+        <option value="$PROJECT_DIR$/persistence/src/main/java/pl/mirek/dao/IBorowerDao.java" />
+        <option value="$PROJECT_DIR$/persistence/src/main/java/pl/mirek/dao/IBorrowerDao.java" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/service/src/main/java/pl/mirek/services/BookService.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/pl/mirek/servlets/showAllBorrowersServletServlet.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/pl/mirek/servlets/ShowAllBorrowersServletServlet.java" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/scripts.jspf" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/includes/head.jspf" />
+        <option value="$PROJECT_DIR$/web/src/main/java/pl/mirek/servlets/ShowAllBorrowersServlet.java" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/borrowerlist.jsp" />
+        <option value="$PROJECT_DIR$/service/src/main/java/pl/mirek/services/BorrowerService.java" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/booktorent.jsp" />
+        <option value="$PROJECT_DIR$/web/src/main/java/pl/mirek/servlets/DoItWithBook.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/pl/mirek/servlets/ShowRentalBooksServlet.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/pl/mirek/servlets/BorrowBookServlet.java" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/show-edit-book.html" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="threads" value="1C" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="5" />
+    <option name="y" value="4" />
+    <option name="width" value="1278" />
+    <option name="height" value="971" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="newlibraryproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newlibraryproject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newlibraryproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newlibraryproject" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newlibraryproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newlibraryproject" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newlibraryproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newlibraryproject" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newlibraryproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newlibraryproject" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newlibraryproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newlibraryproject" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newlibraryproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newlibraryproject" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pl" type="462c0819:PsiDirectoryNode" />
+              <item name="mirek" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newlibraryproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newlibraryproject" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pl" type="462c0819:PsiDirectoryNode" />
+              <item name="mirek" type="462c0819:PsiDirectoryNode" />
+              <item name="dto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newlibraryproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newlibraryproject" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pl" type="462c0819:PsiDirectoryNode" />
+              <item name="mirek" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newlibraryproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newlibraryproject" type="462c0819:PsiDirectoryNode" />
+              <item name="persistence" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newlibraryproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newlibraryproject" type="462c0819:PsiDirectoryNode" />
+              <item name="persistence" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newlibraryproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newlibraryproject" type="462c0819:PsiDirectoryNode" />
+              <item name="persistence" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newlibraryproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newlibraryproject" type="462c0819:PsiDirectoryNode" />
+              <item name="persistence" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newlibraryproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newlibraryproject" type="462c0819:PsiDirectoryNode" />
+              <item name="persistence" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newlibraryproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newlibraryproject" type="462c0819:PsiDirectoryNode" />
+              <item name="persistence" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pl" type="462c0819:PsiDirectoryNode" />
+              <item name="mirek" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newlibraryproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newlibraryproject" type="462c0819:PsiDirectoryNode" />
+              <item name="persistence" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pl" type="462c0819:PsiDirectoryNode" />
+              <item name="mirek" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newlibraryproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newlibraryproject" type="462c0819:PsiDirectoryNode" />
+              <item name="persistence" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pl" type="462c0819:PsiDirectoryNode" />
+              <item name="mirek" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newlibraryproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newlibraryproject" type="462c0819:PsiDirectoryNode" />
+              <item name="persistence" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newlibraryproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newlibraryproject" type="462c0819:PsiDirectoryNode" />
+              <item name="persistence" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newlibraryproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newlibraryproject" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newlibraryproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newlibraryproject" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newlibraryproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newlibraryproject" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newlibraryproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newlibraryproject" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newlibraryproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newlibraryproject" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newlibraryproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newlibraryproject" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pl" type="462c0819:PsiDirectoryNode" />
+              <item name="mirek" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newlibraryproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newlibraryproject" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pl" type="462c0819:PsiDirectoryNode" />
+              <item name="mirek" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newlibraryproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newlibraryproject" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newlibraryproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newlibraryproject" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newlibraryproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newlibraryproject" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newlibraryproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newlibraryproject" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newlibraryproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newlibraryproject" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newlibraryproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newlibraryproject" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pl" type="462c0819:PsiDirectoryNode" />
+              <item name="mirek" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newlibraryproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newlibraryproject" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pl" type="462c0819:PsiDirectoryNode" />
+              <item name="mirek" type="462c0819:PsiDirectoryNode" />
+              <item name="filters" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newlibraryproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newlibraryproject" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pl" type="462c0819:PsiDirectoryNode" />
+              <item name="mirek" type="462c0819:PsiDirectoryNode" />
+              <item name="servlets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newlibraryproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newlibraryproject" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pl" type="462c0819:PsiDirectoryNode" />
+              <item name="mirek" type="462c0819:PsiDirectoryNode" />
+              <item name="tools" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newlibraryproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newlibraryproject" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newlibraryproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newlibraryproject" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newlibraryproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newlibraryproject" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="includes" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555247186370" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Mirek\IdeaProjects\db\newlibraryproject\web\src\main\webapp" />
+      <recent name="H:\Nauka\Java\Projects\_zadania\newlibraryproject\web\src\main\webapp" />
+      <recent name="H:\Nauka\Java\Projects\_zadania\newlibraryproject\persistence\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Library">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.mirek.main.Main" />
+      <module name="persistence" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.mirek.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.mirek.services.Main" />
+      <module name="service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.mirek.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.mirek.amain.Main" />
+      <module name="domain" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.mirek.amain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Library" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.34" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="web:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_newlibraryproject" />
+        <option name="JNDI_PORT" value="8099" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="55697" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="web:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Main (1)" />
+      <item itemvalue="Application.Main (2)" />
+      <item itemvalue="Tomcat Server.Library" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main (2)" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1f9d1989-3fb7-461e-ba18-3a9b127c5cfe" name="Default Changelist" comment="" />
+      <created>1554643977569</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1554643977569</updated>
+      <workItem from="1554643984359" duration="1432000" />
+      <workItem from="1554832224972" duration="55000" />
+      <workItem from="1554832298097" duration="5264000" />
+      <workItem from="1555005594912" duration="26411000" />
+      <workItem from="1555140834375" duration="2184000" />
+      <workItem from="1555143284983" duration="39739000" />
+      <workItem from="1555523607881" duration="3399000" />
+      <workItem from="1555527641824" duration="103000" />
+      <workItem from="1555532494623" duration="1183000" />
+      <workItem from="1555861837902" duration="4776000" />
+      <workItem from="1556121772110" duration="8995000" />
+      <workItem from="1556304819191" duration="683000" />
+      <workItem from="1556312158239" duration="4233000" />
+      <workItem from="1556476847973" duration="3599000" />
+      <workItem from="1556651012320" duration="1307000" />
+      <workItem from="1556958760582" duration="1374000" />
+      <workItem from="1556961514839" duration="13583000" />
+      <workItem from="1556978475762" duration="1163000" />
+      <workItem from="1557001336058" duration="4560000" />
+      <workItem from="1557041922034" duration="19519000" />
+      <workItem from="1557168108207" duration="45099000" />
+    </task>
+    <task id="LOCAL-00001" summary="Zmieniłem opisy na stronie">
+      <created>1555147643244</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1555147643244</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="188702000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="5" y="4" width="1278" height="971" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7989324" visible="true" weight="0.20279147" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" sideWeight="0.20106761" side_tool="true" visible="true" weight="0.20279147" />
+      <window_info id="Persistence" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3293556" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33293557" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39917126" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" visible="true" weight="0.3293556" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.32816228" />
+      <window_info anchor="bottom" id="SonarLint" order="10" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Application Servers" order="15" weight="0.3298731" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24958949" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="JSON Viewer" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Maven" order="10" weight="0.1788026" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Zmieniłem opisy na stronie" />
+    <MESSAGE value="EOD 2019-05-10" />
+    <option name="LAST_COMMIT_MESSAGE" value="EOD 2019-05-10" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/pl/mirek/servlets/ShowAllBooksServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="35" column="1" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/index-min.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="89" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/persistence/persistence.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/persistence/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/pl/mirek/filters/SetCharacterEncodingFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/pl/mirek/dao/IBookDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/pl/mirek/servlets/ShowAuthorServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="25" column="62" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="62" />
+          <folding>
+            <element signature="e#547#548#0" expanded="true" />
+            <element signature="e#611#612#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/showauthordetails.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/pl/mirek/dao/impl/AuthorDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#0#22#1" expanded="true" />
+            <element signature="e#0#52#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/pl/mirek/tools/CustomSqlExtractor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/persistence/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="33" column="114" selection-start-line="33" selection-start-column="114" selection-end-line="33" selection-end-column="114" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/pl/mirek/servlets/ShowBookDetailsServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="40" column="61" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domain/src/main/java/pl/mirek/validator/Validator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domain/src/main/java/pl/mirek/dto/BookDetailsWithAuthorDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="15" />
+          <folding>
+            <element signature="method#BookDetailsWithAuthorDto#0;class#BookDetailsWithAuthorDto#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domain/src/main/java/pl/mirek/dto/NewBookWithAuthorsListDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/addnewbook.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="101" column="7" lean-forward="true" selection-start-line="11" selection-end-line="101" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/showbookdetails.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="50" column="90" selection-start-line="50" selection-start-column="60" selection-end-line="50" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domain/src/main/java/pl/mirek/model/Author.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#677#678#0" expanded="true" />
+            <element signature="e#725#726#0" expanded="true" />
+            <element signature="e#767#768#0" expanded="true" />
+            <element signature="e#803#804#0" expanded="true" />
+            <element signature="e#835#836#0" expanded="true" />
+            <element signature="e#885#886#0" expanded="true" />
+            <element signature="e#927#928#0" expanded="true" />
+            <element signature="e#962#963#0" expanded="true" />
+            <element signature="e#993#994#0" expanded="true" />
+            <element signature="e#1041#1042#0" expanded="true" />
+            <element signature="e#1081#1082#0" expanded="true" />
+            <element signature="e#1118#1119#0" expanded="true" />
+            <element signature="e#1151#1152#0" expanded="true" />
+            <element signature="e#1203#1204#0" expanded="true" />
+            <element signature="e#1247#1248#0" expanded="true" />
+            <element signature="e#1283#1284#0" expanded="true" />
+            <element signature="e#1311#1312#0" expanded="true" />
+            <element signature="e#1357#1358#0" expanded="true" />
+            <element signature="e#1391#1392#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/pl/mirek/servlets/AddNewBookServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="11" column="73" selection-start-line="11" selection-start-column="73" selection-end-line="11" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/pl/mirek/services/AuthorService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="40" column="50" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1127#1128#0" expanded="true" />
+            <element signature="e#1158#1159#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domain/src/main/java/pl/mirek/model/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="521">
+          <caret line="48" column="56" selection-start-line="48" selection-start-column="56" selection-end-line="48" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/pl/mirek/servlets/WriteBookServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="30" column="45" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/pl/mirek/servlets/AddNewBookFormServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="47" column="63" selection-start-line="47" selection-start-column="63" selection-end-line="47" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/addnewbook.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="54" column="64" selection-start-line="54" selection-start-column="64" selection-end-line="54" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domain/src/main/java/pl/mirek/model/Borrow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/pl/mirek/dao/IAuthorDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" column="19" selection-start-line="7" selection-end-line="14" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domain/src/main/java/pl/mirek/dto/AuthorDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domain/src/main/java/pl/mirek/dto/BorrowerDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/pl/mirek/dao/IBorrowerDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/pl/mirek/dao/impl/BookDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" column="70" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/scripts.jspf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/includes/head-includes.jspf">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/authorlist.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="711">
+          <caret line="80" lean-forward="true" selection-end-line="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/pl/mirek/servlets/ShowAllAuthorsServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domain/src/main/java/pl/mirek/model/BorrowerDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domain/src/main/java/pl/mirek/model/Borrower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/pl/mirek/servlets/ShowAllBorrowersServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+          <folding>
+            <element signature="e#556#557#0" expanded="true" />
+            <element signature="e#604#605#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/pl/mirek/dao/impl/BorrowerDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#0#24#1" expanded="true" />
+            <element signature="e#0#58#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/pl/mirek/services/BookService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-186">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/pl/mirek/services/BorrowerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="33" column="56" selection-start-line="33" selection-start-column="56" selection-end-line="33" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="83" column="19" lean-forward="true" selection-end-line="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/borrowerlist.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="67" selection-start-line="65" selection-end-line="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/booktorent.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="72" column="123" selection-start-line="72" selection-start-column="123" selection-end-line="72" selection-end-column="123" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/pl/mirek/servlets/BorrowBookServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="e#516#517#0" expanded="true" />
+            <element signature="e#570#571#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/persistence/src/main/resources/import.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/show-edit-book.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="69" column="2" selection-start-line="69" selection-start-column="2" selection-end-line="69" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/pl/mirek/servlets/ShowRentalBooksServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="42" column="108" selection-start-line="42" selection-start-column="108" selection-end-line="42" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/pl/mirek/servlets/DoItWithBook.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="94" column="90" selection-start-line="94" selection-start-column="90" selection-end-line="94" selection-end-column="90" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>web:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web (web)|Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web|web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

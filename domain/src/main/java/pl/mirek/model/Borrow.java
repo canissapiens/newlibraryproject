@@ -4,12 +4,14 @@ package pl.mirek.model;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.io.Serializable;
+import java.util.Date;
 
 @Data
 @Entity
 @Table(name="borrow")
 
-public class Borrow {
+public class Borrow implements Serializable {
 
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
@@ -22,6 +24,8 @@ public class Borrow {
     @Column(name="borrower_id")
     private Long borrowerID;
 
-
+    @Temporal(TemporalType.DATE)
+    @Column(name = "last_login")
+    private Date lastLogin;
 
 }

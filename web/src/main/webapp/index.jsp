@@ -5,7 +5,9 @@
   Time: 22:29
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,64 +34,59 @@
     </div>
     <div class="row">
         <div class="col">
-            <h2>Striped Rows</h2>
+            <h2></h2>
             <form method="post" action="doItWithBook">
                 <table class="table table-striped">
                     <thead>
                     <tr>
-                        <th>Tytuł</th>
+                        <th>L.p</th>
+                        <th>Title</th>
                         <th>Autor</th>
                         <th>ISBN</th>
                         <th>Kategoria</th>
                         <th>Issue</th>
                         <th>Czyta</th>
-                        <th>Akcja</th>
+
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <th>1</th>
-                        <td>John</td>
-                        <td>Doe</td>
-                        <td>john@example.com</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><input type="radio" class="form-check-input" name="optradio" value="1"></td>
-                    </tr>
-                    <tr>
-                        <th>2</th>
-                        <td>Mary</td>
-                        <td>Moe</td>
-                        <td>mary@example.com</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><input type="radio" class="form-check-input" name="optradio" value="2"></td>
-                    </tr>
-                    <tr>
-                        <th>3</th>
-                        <td>July</td>
-                        <td>Dooley</td>
-                        <td>july@example.com</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><input type="radio" class="form-check-input" name="optradio" value="3"></td>
-                    </tr>
+                    <c:forEach var="book" items="${requestScope.booklist}" varStatus="loop">
+                        <tr>
+                            <th>${loop.count}</th>
+                            <td>${book.title}</td>
+                            <td>${book.author.firstName} ${book.author.lastName}</td>
+                            <td>${book.isbn}</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><input type="radio" class="form-check-input" name="optradio" value="${book.id_book}"></td>
+                        </tr>
+                    </c:forEach>
                     </tbody>
+
                 </table>
                 <div>
-                    <button name="command" value="add" type="submit" class="btn btn-outline-primary btn-wide">Add</button>
-                    <button name="command" value="edit" type="submit" class="btn btn-outline-primary btn-wide">Edit</button>
-                    <button name="command" value="delete" type="submit" class="btn btn-outline-primary btn-wide">Delete</button>
-                    <button name="command" value="show" type="submit" class="btn btn-outline-primary btn-wide">Show</button>
+                    <button name="command" value="ADDBOOK" type="submit" class="btn btn-outline-primary btn-wide">Add
+                    </button>
+                    <button name="command" value="EDITBOOK" type="submit" class="btn btn-outline-primary btn-wide">Edit
+                    </button>
+                    <button name="command" value="DELETE" type="submit" class="btn btn-outline-primary btn-wide">
+                        Delete
+                    </button>
+                    <button name="command" value="SHOWBOOK" type="submit" class="btn btn-outline-primary btn-wide">Show
+                    </button>
+                    <button name="command" value="ALLAUTHORS" type="submit" class="btn btn-outline-primary btn-wide">Authors
+                    </button>
+                    <button name="command" value="BORROWERS" type="submit" class="btn btn-outline-primary btn-wide">Borrowers
+                    </button>
+
                 </div>
-                </form>
+            </form>
         </div>
     </div>
 </div>
 <footer>
+    <div>&nbsp;</div>
 </footer>
 </body>
 </html>

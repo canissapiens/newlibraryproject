@@ -26,21 +26,27 @@ public class AuthorDao implements IAuthorDao {
         transaction.commit();
     }
 
-/*
-    public List<Author> findAll(){
-        List<Author> author;
-        author = entityManager.createQuery(
-                "SELECT a FROM author a")
-                .getResultList(
-
-                );
-
-
-        return null;
+    @Override
+    public List<Author> findAll() {
+        List<Author> authors;
+        authors = entityManager.createQuery(
+                "SELECT a FROM Author a", Author.class)
+                .getResultList();
+        return authors;
     }
-*/
 
-    public void cleanUP() {
+    @Override
+    public Author findAuthorById(long authorId) {
+        Author author;
+
+        author = entityManager.createQuery("SELECT a FROM Author a WHERE a.id_author = :authorid", Author.class)
+                .setParameter("authorid", authorId)
+                .getSingleResult();
+        System.out.println(author.getLastName());
+        return author;
+    }
+
+    public void cleanUp() {
 
     }
 }

@@ -5,8 +5,7 @@ import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 @Data
 @Entity
@@ -33,21 +32,20 @@ public class Book implements Serializable {
     @Column(name = "release_date")
     private int releaseDate;
 
-    @Column(name="summary")
+    @Column(name = "summary")
     private String summary;
 
-    @Column(name="title")
+    @Column(name = "title")
     private String title;
 
     @ManyToOne
     @JoinColumn(name = "author_id")
     private Author author;
 
-
     @ManyToMany
     @JoinTable(name = "borrow",
             joinColumns = {@JoinColumn(name = "book_id", referencedColumnName = "id_book")},
             inverseJoinColumns = {@JoinColumn(name = "borrower_id", referencedColumnName = "id_borrower")})
-    private List<Borrower> borrowers;
+    private List<Borrower> borrowers = new LinkedList<>();
 
 }
